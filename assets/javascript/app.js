@@ -59,6 +59,9 @@ function calcTrainArrival(firstTime, frequency) {
 
     // Minutes until Train
     minutesAway = frequency - tRemainder;
+    If (minutesAway < 0) {
+        minutesAway = 0;
+    }
     // console.log("MINUTES TILL TRAIN: " + minutesAway);
 
     // Next Train
